@@ -3,7 +3,10 @@
 
 > CORE thử nghiệm cho dự án **MEBLOCK – Mind Explore Block**.  
 > Mục tiêu: vận hành **nạp app qua OTA BLE**, thực thi **một file app .py duy nhất**, lưu & tự chạy lại sau reset, đồng thời hỗ trợ **cập nhật Core** và **bổ sung thư viện** từ xa.
-
+> Thư mục core chứa core của dự án (có sẵn core đóng gói)
+> Thư mục lib chứa các thư viện đang phát triển (có sẵn gói mẫu)
+> Thư mục Tool chứa tool kết nối để đẩy file - core - lib (dùng chung 1 tool)
+> Thư mục Example chứa ví dụ mẫu
 ---
 
 ## 🔧 Thiết bị & Nền tảng
