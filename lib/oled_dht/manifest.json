@@ -1,0 +1,14 @@
+{
+  "kind": "core",
+  "version": "libs-optimized-20251022-134650",
+  "files": [
+    {
+      "src": "oledx.py",
+      "dst": "oledx.py"
+    },
+    {
+      "src": "dht20x.py",
+      "dst": "dht20x.py"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "core",
+  "version": "1.2.3-test",
+  "files": [
+    {
+      "src": "boot.py",
+      "dst": "boot.py"
+    },
+    {
+      "src": "main.py",
+      "dst": "main.py"
+    },
+    {
+      "src": "ble_ota.py",
+      "dst": "ble_ota.py"
+    },
+    {
+      "src": "fw_ota.py",
+      "dst": "fw_ota.py"
+    }
+  ]
+}
