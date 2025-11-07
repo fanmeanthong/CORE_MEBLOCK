@@ -22,7 +22,7 @@
     
     
       
-        <title>mqtt — MQTT Helper - MEBLOCK IOT | ESP32 MicroPython API</title>
+        <title>MQTT - MEBLOCK IOT | ESP32 MicroPython API</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mqtt-mqtt-helper-compact" class="md-skip">
+        <a href="#mqtt-mqtt-helper" class="md-skip">
           Bỏ qua
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              mqtt — MQTT Helper
+              MQTT
             
           </span>
         </div>
@@ -332,7 +332,7 @@
   
   
   <span class="md-ellipsis">
-    mqtt — MQTT Helper
+    MQTT
     
   </span>
   
@@ -345,7 +345,7 @@
   
   
   <span class="md-ellipsis">
-    mqtt — MQTT Helper
+    MQTT
     
   </span>
   
@@ -397,7 +397,7 @@
   
   
   <span class="md-ellipsis">
-    oled_i2c — OLED I2C Module
+    OLED
     
   </span>
   
@@ -420,7 +420,7 @@
   
   
   <span class="md-ellipsis">
-    aiot_dht — DHT Sensors
+    DHT Sensors
     
   </span>
   
@@ -443,7 +443,7 @@
   
   
   <span class="md-ellipsis">
-    ultrasonic — HC‑SR04
+    HC‑SR04
     
   </span>
   
@@ -512,18 +512,18 @@
 
 
 
-<h1 id="mqtt-mqtt-helper-compact"><code>mqtt</code> — MQTT Helper (Compact)<a class="headerlink" href="#mqtt-mqtt-helper-compact" title="Permanent link">&para;</a></h1>
+<h1 id="mqtt-mqtt-helper"><code>mqtt</code> — MQTT Helper<a class="headerlink" href="#mqtt-mqtt-helper" title="Permanent link">&para;</a></h1>
 <h2 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h2>
 <p><pre class="api-signature"><code>connect_wifi(ssid, password) -&gt; ip</code></pre>
-Kết nối Wi‑Fi STA và trả về chuỗi IP.</p>
+Kết nối Wi‑Fi với Tên &amp; Mật khẩu wifi, trả về chuỗi IP.</p>
 <p><pre class="api-signature"><code>connect_broker(server, port=1883, client_id=None)</code></pre>
-Kết nối broker. Nếu <code>client_id=None</code> sẽ tự sinh từ <code>machine.unique_id()</code>.</p>
+Kết nối broker, với Server &amp; port tuywf chỉnh. Nếu <code>client_id=None</code> sẽ tự sinh từ <code>machine.unique_id()</code>.</p>
 <p><pre class="api-signature"><code>on_receive_message(topic, callback)</code></pre>
-Đăng ký <code>callback(payload, topic)</code>.</p>
+Đăng ký <code>callback(payload, topic)</code>cho thông điệp nhận được từ server.</p>
 <p><pre class="api-signature"><code>publish(topic, payload)</code></pre>
-Gửi dữ liệu (str/bytes).</p>
+Gửi dữ liệu lên server tới Topic tương ứng(str/bytes).</p>
 <p><pre class="api-signature"><code>check_message()</code></pre>
-Vòng nhận <strong>non‑block</strong>; tự reconnect nếu socket lỗi.</p>
+Vòng nhận check message từ Server <strong>non‑block</strong>; tự reconnect nếu socket lỗi.</p>
 <pre class="api-signature"><code>disconnect()</code></pre>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Sample Code</label></div>
 <div class="tabbed-content">

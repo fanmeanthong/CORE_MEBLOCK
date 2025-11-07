@@ -22,7 +22,7 @@
     
     
       
-        <title>aiot_dht — DHT Sensors - MEBLOCK IOT | ESP32 MicroPython API</title>
+        <title>DHT Sensors - MEBLOCK IOT | ESP32 MicroPython API</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aiot_dht-dht-sensors-compact" class="md-skip">
+        <a href="#aiot_dht-thu-vien-cam-bien-dht" class="md-skip">
           Bỏ qua
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aiot_dht — DHT Sensors
+              DHT Sensors
             
           </span>
         </div>
@@ -323,7 +323,7 @@
   
   
   <span class="md-ellipsis">
-    mqtt — MQTT Helper
+    MQTT
     
   </span>
   
@@ -346,7 +346,7 @@
   
   
   <span class="md-ellipsis">
-    oled_i2c — OLED I2C Module
+    OLED
     
   </span>
   
@@ -378,7 +378,7 @@
   
   
   <span class="md-ellipsis">
-    aiot_dht — DHT Sensors
+    DHT Sensors
     
   </span>
   
@@ -391,7 +391,7 @@
   
   
   <span class="md-ellipsis">
-    aiot_dht — DHT Sensors
+    DHT Sensors
     
   </span>
   
@@ -443,7 +443,7 @@
   
   
   <span class="md-ellipsis">
-    ultrasonic — HC‑SR04
+    HC‑SR04
     
   </span>
   
@@ -512,11 +512,14 @@
 
 
 
-<h1 id="aiot_dht-dht-sensors-compact"><code>aiot_dht</code> — DHT Sensors (Compact)<a class="headerlink" href="#aiot_dht-dht-sensors-compact" title="Permanent link">&para;</a></h1>
+<h1 id="aiot_dht-thu-vien-cam-bien-dht"><code>aiot_dht</code> — Thư viện cảm biến DHT<a class="headerlink" href="#aiot_dht-thu-vien-cam-bien-dht" title="Permanent link">&para;</a></h1>
 <h2 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h2>
 <p><pre class="api-signature"><code>AIOT_DHT(sensor, *, board=None, sda=None, scl=None, pin=None)</code></pre>
-Tạo cảm biến DHT: <code>"dht20"|"aht20"|"dht11"</code>. I2C dùng <code>board</code> hoặc <code>sda/scl</code>; DHT11 dùng <code>pin</code>.</p>
+Tạo cảm biến DHT: <code>"dht20"|"aht20"|"dht11"</code>. Cảm biến I2C dùng <code>board</code> hoặc <code>sda/scl</code>để chọn chân; DHT11 dùng <code>pin</code>.</p>
+<p><pre class="api-signature"><code>read() </code></pre>
+Cập nhật giá trị của cảm biến, nên gọi trước khi đọc các giá trị 
 <pre class="api-signature"><code>read() -&gt; bool • temperature() -&gt; float • humidity() -&gt; float</code></pre>
+Trả về giá trị đọc được từ cảm biến, temperature(): <code>Nhiệt độ *C</code>, humidity(): <code>Độ ẩm %</code></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Sample Code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>

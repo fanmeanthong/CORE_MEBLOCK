@@ -22,7 +22,7 @@
     
     
       
-        <title>oled_i2c — OLED I2C Module - MEBLOCK IOT | ESP32 MicroPython API</title>
+        <title>OLED - MEBLOCK IOT | ESP32 MicroPython API</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#oled_i2c-oled-i2c-module-ssd1306sh1106-compact" class="md-skip">
+        <a href="#oled_i2c-thu-vien-oled-i2c-module-driver-ssd1306sh1106" class="md-skip">
           Bỏ qua
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              oled_i2c — OLED I2C Module
+              OLED
             
           </span>
         </div>
@@ -323,7 +323,7 @@
   
   
   <span class="md-ellipsis">
-    mqtt — MQTT Helper
+    MQTT
     
   </span>
   
@@ -355,7 +355,7 @@
   
   
   <span class="md-ellipsis">
-    oled_i2c — OLED I2C Module
+    OLED
     
   </span>
   
@@ -368,7 +368,7 @@
   
   
   <span class="md-ellipsis">
-    oled_i2c — OLED I2C Module
+    OLED
     
   </span>
   
@@ -420,7 +420,7 @@
   
   
   <span class="md-ellipsis">
-    aiot_dht — DHT Sensors
+    DHT Sensors
     
   </span>
   
@@ -443,7 +443,7 @@
   
   
   <span class="md-ellipsis">
-    ultrasonic — HC‑SR04
+    HC‑SR04
     
   </span>
   
@@ -512,12 +512,12 @@
 
 
 
-<h1 id="oled_i2c-oled-i2c-module-ssd1306sh1106-compact"><code>oled_i2c</code> — OLED I2C Module (SSD1306/SH1106, Compact)<a class="headerlink" href="#oled_i2c-oled-i2c-module-ssd1306sh1106-compact" title="Permanent link">&para;</a></h1>
+<h1 id="oled_i2c-thu-vien-oled-i2c-module-driver-ssd1306sh1106"><code>oled_i2c</code> — Thư viện OLED I2C Module (Driver SSD1306/SH1106)<a class="headerlink" href="#oled_i2c-thu-vien-oled-i2c-module-driver-ssd1306sh1106" title="Permanent link">&para;</a></h1>
 <h2 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h2>
 <p><pre class="api-signature"><code>Oled(driver="SSD1306", *, board=None, sda=None, scl=None, sh1106_offset=2)</code></pre>
-Khởi tạo nhanh. Mặc định màn 128×64. Với <strong>SH1106</strong>, dùng <code>sh1106_offset=2</code> để canh 128 cột.</p>
+Khởi tạo nhanh. Mặc định màn 128×64. Với Driver <strong>SH1106</strong>.</p>
 <p><pre class="api-signature"><code>text(s, x, y, color=1) • show() • fill(v=0) • clear()</code></pre>
-API khung hình (framebuffer). <code>color</code>: <code>0</code> = tắt, <code>1</code> = bật.</p>
+API khung hình (framebuffer), vẽ một khung lên màn hình. <code>color</code>: <code>0</code> = tắt, <code>1</code> = bật.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Sample Code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>
