@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://<your-user>.github.io/<your-repo>/api/oled_i2c/">
+        <link rel="canonical" href="https://<your-user>.github.io/<your-repo>/api/oled/">
       
       
-        <link rel="prev" href="../mqtt/">
-      
-      
-        <link rel="next" href="../aiot_dht/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>oled_i2c — OLED I2C Module - MEBLOCK IOT | MicroPython API</title>
+        <title>oled — OLED I2C Module (SSD1306/SH1106) - MEBLOCK IOT | MicroPython API</title>
       
     
     
@@ -68,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#oled_i2c-oled-i2c-module-ssd1306sh1106" class="md-skip">
+        <a href="#oled-oled-i2c-module-ssd1306sh1106" class="md-skip">
           Bỏ qua
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              oled_i2c — OLED I2C Module
+              oled — OLED I2C Module (SSD1306/SH1106)
             
           </span>
         </div>
@@ -204,12 +200,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../mqtt/" class="md-tabs__link">
           
   
@@ -313,31 +307,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -350,7 +339,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. MicroPython API (Modules)
@@ -384,32 +373,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    oled_i2c — OLED I2C Module
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../oled_i2c.md" class="md-nav__link">
         
   
   
@@ -420,44 +387,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Mục lục
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Code
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -470,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aiot_dht/" class="md-nav__link">
+      <a href="../aiot_dht.md" class="md-nav__link">
         
   
   
@@ -652,8 +581,8 @@
   
 
 
-<h1 id="oled_i2c-oled-i2c-module-ssd1306sh1106"><code>oled_i2c</code> — OLED I2C Module (SSD1306/SH1106)<a class="headerlink" href="#oled_i2c-oled-i2c-module-ssd1306sh1106" title="Permanent link">&para;</a></h1>
-<p>Chức năng chính và chức năng của <code>oled_i2c</code>.</p>
+<h1 id="oled-oled-i2c-module-ssd1306sh1106"><code>oled</code> — OLED I2C Module (SSD1306/SH1106)<a class="headerlink" href="#oled-oled-i2c-module-ssd1306sh1106" title="Permanent link">&para;</a></h1>
+<p>Chức năng chính và chức năng của <code>oled</code>.</p>
 <h2 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h2>
 <p><pre class="api-signature"><code>Oled(driver="SSD1306", *, board=None, sda=None, scl=None, sh1106_offset=2)</code></pre>
 Khởi tạo nhanh. Mặc định màn 128×64. Với <strong>SH1106</strong>, dùng <code>sh1106_offset=2</code> để canh 128 cột.</p>

@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://<your-user>.github.io/<your-repo>/api/aiot_dht/">
+        <link rel="canonical" href="https://<your-user>.github.io/<your-repo>/api/dht/">
       
       
-        <link rel="prev" href="../oled_i2c/">
-      
-      
-        <link rel="next" href="../ultrasonic/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>aiot_dht — DHT Sensors - MEBLOCK IOT | MicroPython API</title>
+        <title>dht — DHT Sensors - MEBLOCK IOT | MicroPython API</title>
       
     
     
@@ -68,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aiot_dht-dht-sensors" class="md-skip">
+        <a href="#dht-dht-sensors" class="md-skip">
           Bỏ qua
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aiot_dht — DHT Sensors
+              dht — DHT Sensors
             
           </span>
         </div>
@@ -204,12 +200,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../mqtt/" class="md-tabs__link">
           
   
@@ -313,31 +307,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -350,7 +339,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. MicroPython API (Modules)
@@ -387,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../oled_i2c/" class="md-nav__link">
+      <a href="../oled_i2c.md" class="md-nav__link">
         
   
   
@@ -407,32 +396,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aiot_dht — DHT Sensors
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aiot_dht.md" class="md-nav__link">
         
   
   
@@ -443,44 +410,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Mục lục
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample Code
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -652,17 +581,17 @@
   
 
 
-<h1 id="aiot_dht-dht-sensors"><code>aiot_dht</code> — DHT Sensors<a class="headerlink" href="#aiot_dht-dht-sensors" title="Permanent link">&para;</a></h1>
-<p>Chức năng chính và chức năng của <code>aiot_dht</code>.</p>
+<h1 id="dht-dht-sensors"><code>dht</code> — DHT Sensors<a class="headerlink" href="#dht-dht-sensors" title="Permanent link">&para;</a></h1>
+<p>Chức năng chính và chức năng của <code>dht</code>.</p>
 <h2 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h2>
-<p><pre class="api-signature"><code>AIOT_DHT(sensor, *, board=None, sda=None, scl=None, pin=None)</code></pre>
+<p><pre class="api-signature"><code>DHT(sensor, *, board=None, sda=None, scl=None, pin=None)</code></pre>
 Tạo cảm biến DHT: <code>"dht20"|"aht20"|"dht11"</code>.</p>
 <p><pre class="api-signature"><code>read() -&gt; bool</code></pre>
 Trả về <code class="pill pill-true">True</code> nếu đọc thành công, <code class="pill pill-false">False</code> nếu lỗi.</p>
 <pre class="api-signature"><code>temperature() -&gt; float • humidity() -&gt; float</code></pre>
 <h2 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aiot_dht</span><span class="w"> </span><span class="kn">import</span> <span class="n">AIOT_DHT</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">d</span> <span class="o">=</span> <span class="n">AIOT_DHT</span><span class="p">(</span><span class="s2">&quot;dht20&quot;</span><span class="p">,</span> <span class="n">board</span><span class="o">=</span><span class="s2">&quot;s3&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aiot_dht</span><span class="w"> </span><span class="kn">import</span> <span class="n">DHT</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">d</span> <span class="o">=</span> <span class="n">DHT</span><span class="p">(</span><span class="s2">&quot;dht20&quot;</span><span class="p">,</span> <span class="n">board</span><span class="o">=</span><span class="s2">&quot;s3&quot;</span><span class="p">)</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">read</span><span class="p">():</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">temperature</span><span class="p">(),</span> <span class="n">d</span><span class="o">.</span><span class="n">humidity</span><span class="p">())</span>
 </code></pre></div>
